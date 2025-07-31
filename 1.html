@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">Quiz Application</h1>
+            <button class="theme-toggle" onclick="toggleTheme()">🌙 Switch Theme</button>
+        </div>
+
+        <!-- User Info Screen -->
+        <div id="userInfoScreen" class="card fade-in">
+            <h2 style="margin-bottom: 1.5rem; text-align: center;">Welcome! Please enter your details</h2>
+            <form id="userInfoForm">
+                <div class="form-group">
+                    <label class="form-label">✏️ Name</label>
+                    <input type="text" id="userName" class="form-input" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">🏫 Class</label>
+                    <input type="text" id="userClass" class="form-input" placeholder="Enter your class" required>
+                </div>
+                <button type="submit" class="btn" style="width: 100%;">Continue to Quiz</button>
+            </form>
+        </div>
+
+        <!-- Pre-Quiz Info Screen -->
+        <div id="preQuizScreen" class="card fade-in hidden">
+            <h2 style="text-align: center; margin-bottom: 2rem;">Quiz Information</h2>
+            <div class="quiz-info">
+                <div class="info-item">
+                    <span class="info-number" id="totalQuestions">10</span>
+                    <span>Total Questions</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-number">15</span>
+                    <span>Seconds per Question</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-number">🎯</span>
+                    <span>Current Theme</span>
+                </div>
+            </div>
+            <div style="background: var(--bg-primary); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0;">
+                <h3 style="margin-bottom: 1rem;">📋 Quiz Rules:</h3>
+                <ul style="list-style: none; padding-left: 0;">
+                    <li style="margin-bottom: 0.5rem;">✅ One question at a time</li>
+                    <li style="margin-bottom: 0.5rem;">🕒 15 seconds per question</li>
+                    <li style="margin-bottom: 0.5rem;">🚫 No going back to previous questions</li>
+                    <li style="margin-bottom: 0.5rem;">⏰ Auto-submit when time runs out</li>
+                </ul>
+            </div>
+            <button class="btn" onclick="startQuiz()" style="width: 100%;">🚀 Start Quiz</button>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quizScreen" class="hidden">
+            <div class="timer-container">
+                <div class="timer-bar">
+                    <div id="timerProgress" class="timer-progress"></div>
+                </div>
+                <div class="question-header">
+                    <span class="question-counter" id="questionCounter">Question 1 of 10</span>
+                    <span id="timeRemaining">15s</span>
+                </div>
+            </div>
+            
+            <div class="card fade-in">
+                <h2 class="question-text" id="questionText"></h2>
+                <div class="options-grid" id="optionsContainer"></div>
+            </div>
+        </div>
+
+        <!-- Results Screen -->
+        <div id="resultsScreen" class="hidden">
+            <div class="card fade-in">
+                <h2 style="text-align: center; margin-bottom: 2rem;">📊 Quiz Results</h2>
+                <div class="results-summary">
+                    <div class="result-item">
+                        <span class="result-value total" id="totalQuestionsResult">10</span>
+                        <span>Total Questions</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-value correct" id="correctAnswers">0</span>
+                        <span>Correct Answers</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-value incorrect" id="incorrectAnswers">0</span>
+                        <span>Incorrect Answers</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-value" id="finalScore">0%</span>
+                        <span>Final Score</span>
+                    </div>
+                </div>
+                <button class="btn" onclick="showReview()" style="width: 100%; margin-top: 1rem;">📖 Review Answers</button>
+            </div>
+        </div>
+
+        <!-- Review Screen -->
+        <div id="reviewScreen" class="hidden">
+            <div class="card fade-in">
+                <h2 style="text-align: center; margin-bottom: 2rem;">🔍 Answer Review</h2>
+                <div id="reviewContainer"></div>
+                <button class="btn btn-secondary" onclick="restartQuiz()" style="width: 100%; margin-top: 2rem;">🔄 Take Quiz Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="1.js"></script>
+</body>
+</html>

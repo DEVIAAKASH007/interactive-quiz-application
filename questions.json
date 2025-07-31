@@ -1,0 +1,62 @@
+[
+  {
+    "question": "What is the capital of France?",
+    "options": ["London", "Berlin", "Paris", "Madrid"],
+    "correct": 2,
+    "explanation": "Paris is the capital and most populous city of France."
+  },
+  {
+    "question": "Which planet is known as the Red Planet?",
+    "options": ["Venus", "Mars", "Jupiter", "Saturn"],
+    "correct": 1,
+    "explanation": "Mars is called the Red Planet due to its reddish appearance caused by iron oxide on its surface."
+  },
+  {
+    "question": "What is 2 + 2?",
+    "options": ["3", "4", "5", "6"],
+    "correct": 1,
+    "explanation": "Basic arithmetic: 2 + 2 equals 4."
+  },
+  {
+    "question": "Who painted the Mona Lisa?",
+    "options": ["Van Gogh", "Picasso", "Leonardo da Vinci", "Michelangelo"],
+    "correct": 2,
+    "explanation": "Leonardo da Vinci painted the famous Mona Lisa during the Renaissance period."
+  },
+  {
+    "question": "What is the largest ocean on Earth?",
+    "options": ["Atlantic", "Indian", "Arctic", "Pacific"],
+    "correct": 3,
+    "explanation": "The Pacific Ocean is the largest and deepest ocean on Earth."
+  },
+  {
+    "question": "Which gas do plants absorb from the atmosphere?",
+    "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
+    "correct": 1,
+    "explanation": "Plants absorb carbon dioxide from the atmosphere during photosynthesis."
+  },
+  {
+    "question": "What is the smallest prime number?",
+    "options": ["0", "1", "2", "3"],
+    "correct": 2,
+    "explanation": "2 is the smallest prime number and the only even prime number."
+  },
+  {
+    "question": "Which continent is the largest?",
+    "options": ["Africa", "Asia", "North America", "Europe"],
+    "correct": 1,
+    "explanation": "Asia is the largest continent by both area and population."
+  },
+  {
+    "question": "What year did World War II end?",
+    "options": ["1944", "1945", "1946", "1947"],
+    "correct": 1,
+    "explanation": "World War II ended in 1945 with the surrender of Japan in September."
+  },
+  {
+    "question": "What is the chemical symbol for gold?",
+    "options": ["Go", "Gd", "Au", "Ag"],
+    "correct": 2,
+    "explanation": "Au is the chemical symbol for gold, derived from the Latin word 'aurum'."
+  }
+]
