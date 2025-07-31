@@ -19,3 +19,4 @@ A responsive and theme-switchable interactive quiz application built with HTML, 
 3. Open `index.html` in your browser.
 
 ---
+<img width="1545" height="948" alt="image" src="https://github.com/user-attachments/assets/79fa2ad7-5c30-4190-8021-cdc7a13aabea" />
