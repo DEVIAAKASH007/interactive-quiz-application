@@ -20,3 +20,5 @@ A responsive and theme-switchable interactive quiz application built with HTML, 
 
 ---
 <img width="1545" height="948" alt="image" src="https://github.com/user-attachments/assets/79fa2ad7-5c30-4190-8021-cdc7a13aabea" />
+<img width="1784" height="904" alt="image" src="https://github.com/user-attachments/assets/75814bc4-b15b-420c-a591-3a03a1a3e012" />
+
